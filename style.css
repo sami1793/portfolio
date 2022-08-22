@@ -47,13 +47,13 @@ header a {
     max-width: 50%;
 }
 
-.foto-perfil{
+.foto-perfil {
     width: 400px;
 }
 
 .main-section img {
     width: 100%;
-    
+
 }
 
 .main-section button {
@@ -63,58 +63,139 @@ header a {
     margin: 15px;
     border-radius: 20px;
 }
+
 /* --------------SECCION CONOCIMIENTOS----------- */
-.skills-section{
+.skills-section {
     /* min-height: 88vh; */
     text-align: center;
-    padding:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.skills-grid{
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    /*espacio entre parrafo anterior*/
+    max-width: 65rem;
+}
+
+.skill-item {
+    background-color: lightgray;
+    padding: 50px;
+    margin: 15px;
+    width: 15rem;
+}
+
+/* Iconos tecnologias */
+.fa-html5 {
+    color: #e54d26;
+    font-size: 6rem;
+
+}
+
+.fa-css3-alt {
+    color: #3d8fc6;
+    font-size: 6rem;
+    /* font-size: 100px; */
+}
+
+.fa-sass {
+    color: #c69;
+    font-size: 6rem;
+}
+
+.fa-js-square {
+    color: #f0db4f;
+    font-size: 6rem;
+}
+
+.fa-react {
+    color: #61dafb;
+    font-size: 6rem;
+}
+
+.fa-git-alt {
+    color: #f34f29;
+    font-size: 6rem;
+}
+
+/* --------------SECCION FRASE---------------- */
+.quote-section {
+    background-color: #ff8686;
+    color: white;
+    text-align: center;
+    font-family: 'Arima', cursive;
+    padding: 50px;
+}
+
+.fa-quote-left {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    margin: 15px;
+    font-size: 2rem;
+}
+
+.autor {
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+/* ----------------SECCION MIS PROYECTOS------------------ */
+.proyects-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*alineo en horizontal todas cajas, funciona solo si tiene widht*/
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: rgb(157, 157, 157);
+}
+
+.proyects-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 30px;/*espacio entre parrafo anterior*/
+    max-width: 900px;
 }
-.skill-item{
-    background-color: lightcyan;
-    padding: 30px 15px;
+
+.proyect-item {
+    width: 260px;
+    border: gray solid 1px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*centro img en horizontal*/
+    justify-content: end;
     margin: 15px;
-    width: 18rem;
+    /*margen entre cajas*/
+    padding: 15px;
+    background-color: rgb(201, 201, 201);
+    cursor: pointer;
 }
-/* Iconos tecnologias */
-.fa-html5{
-    color: #e54d26;
-    font-size:6rem;
-    
+.proyect-item p{
+    margin-top: 15px;/*separa img de titulo*/
 }
-.fa-css3-alt{
-    color:#3d8fc6;
-    font-size:6rem;
-    /* font-size: 100px; */
+
+.proyect-item img {
+    width: 70%;
 }
-.fa-sass{
-    color: #c69;
-    font-size:6rem;
+
+.proyect-item:hover {
+    border: none;
+    box-shadow: 0px 3px 5px #f8bc9b;
+    font-size: 1.2em;
 }
-.fa-js-square{
-    color: #f0db4f;
-    font-size:6rem;
-}
-.fa-react{
-    color: #61dafb;
-    font-size:6rem;
-}
-.fa-git-alt{
-    color: #f34f29;
-    font-size:6rem;
-}
-/* --------------SECCION FRASE---------------- */
-/* ----------------SECCION MIS PROYECTOS------------------ */
-.proyects-section{
-    text-align: center;
-}
+
 /* ---------------------SECCION CONTACTO------------------ */
-.contact-section{
+.contact-section {
     display: flex;
     justify-content: space-around;
 }

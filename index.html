@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Letra Quote -->
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Samanta Romero</title>
 </head>
@@ -38,8 +43,10 @@
             </div>
         </section>
         <section class="skills-section" id="seccion-conocimientos">
-            <h2>Mis Conocimientos</h2>
-            <p>Durante todo este tiempo fue adquieriendo los siguientes conocimientos</p>
+            <div class="intro-skills">
+                <h2>Mis Conocimientos</h2>
+                <p>Durante todo este tiempo fue adquieriendo los siguientes conocimientos</p>
+            </div>
             <div class="skills-grid">
                 <div class="skill-item">
                     <i class="fa-brands fa-html5"></i>
@@ -67,20 +74,59 @@
                 </div>
             </div>
         </section>
-        <section id="seccion-frase">
+        <section class="quote-section" id="seccion-frase">
+            <i class="fa-solid fa-quote-left"></i>
             <blockquote>
-                El secreto de la felicidad es simple: averigua lo que te gusta hacer
-                y dirige todas tus energias en esa dirección.
+                "El secreto de la felicidad es simple: averigua lo que te gusta hacer
+                y dirige todas tus energias en esa dirección."
             </blockquote>
+            <h4 class="autor"><i>Robin Sharma</i></h4>
         </section>
+        <!-- SECCION PROYECTOS -->
         <section class=proyects-section id="seccion-proyectos">
             <h2>Mis Proyectos</h2>
+            <div class="proyects-grid">
+                <div class="proyect-item">
+                    <img src="imagenes/portfolio.svg" alt="imagen_portfolio" />
+                    <p>Portfolio</p>
+                </div>
+                <div class="proyect-item">
+                    <img src="imagenes/memes.svg" alt="imagen_tareas" />
+                    <p>Generador de memes</p>
+                </div>
+                <div class="proyect-item">
+                    <img src="imagenes/bitcoin.svg" alt="imagen_dinero" />
+                    <p>Controlador de gastos</p>
+                </div>
+                <div class="proyect-item">
+                    <img src="imagenes/game.svg" alt="imagen_reunion" />
+                    <p>Match 3</p>
+                </div>
+                <div class="proyect-item">
+                    <img src="imagenes/reunion.svg" alt="imagen_reunion" />
+                    <p>Administrador de reuniones</p>
+                </div>
+                <div class="proyect-item">
+                    <img src="imagenes/lista_tareas.svg" alt="imagen_reunion" />
+                    <p>Todo app</p>
+                </div>
+                <div class="proyect-item">
+                    <img src="imagenes/peliculas.svg" alt="imagen_reunion" />
+                    <p>Buscador de peliculas</p>
+                </div>
+            </div>
+            </div>
         </section>
+        <!-- SECCION CONTACTO -->
         <section class=contact-section id="seccion-formulario">
-            <div><h3>Contactame</h3></div>
-            <div><h3>Escribime</h3></div>
-            
-            
+            <div>
+                <h3>Contactame</h3>
+            </div>
+            <div>
+                <h3>Escribime</h3>
+            </div>
+
+
         </section>
     </main>
     <footer>
