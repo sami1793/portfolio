@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------HEADER----------- */
+header {
+    background-color: #ff8686;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: end;
+}
+
+header li {
+    background-color: gray;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------SECCION HOLA----------- */
+.main-section {
+    background-color: #f8e6cb;
+    min-height: 88vh;
+    /*asi tiene en cuenta la barra de navegación. min por si ocupa mas*/
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7em;
+}
+
+.main-section div {
+    background-color: aqua;
+    margin: 15px;
+    text-align: center;
+    max-width: 50%;
+}
+
+.foto-perfil{
+    width: 400px;
+}
+
+.main-section img {
+    width: 100%;
+    
+}
+
+.main-section button {
+    background-color: #ff8686;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+}
+/* --------------SECCION CONOCIMIENTOS----------- */
+.skills-section{
+    /* min-height: 88vh; */
+    text-align: center;
+    padding:15px;
+}
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;/*espacio entre parrafo anterior*/
+}
+.skill-item{
+    background-color: lightcyan;
+    padding: 30px 15px;
+    margin: 15px;
+    width: 18rem;
+}
+/* Iconos tecnologias */
+.fa-html5{
+    color: #e54d26;
+    font-size:6rem;
+    
+}
+.fa-css3-alt{
+    color:#3d8fc6;
+    font-size:6rem;
+    /* font-size: 100px; */
+}
+.fa-sass{
+    color: #c69;
+    font-size:6rem;
+}
+.fa-js-square{
+    color: #f0db4f;
+    font-size:6rem;
+}
+.fa-react{
+    color: #61dafb;
+    font-size:6rem;
+}
+.fa-git-alt{
+    color: #f34f29;
+    font-size:6rem;
+}
+/* --------------SECCION FRASE---------------- */
+/* ----------------SECCION MIS PROYECTOS------------------ */
+.proyects-section{
+    text-align: center;
+}
+/* ---------------------SECCION CONTACTO------------------ */
+.contact-section{
+    display: flex;
+    justify-content: space-around;
+}
