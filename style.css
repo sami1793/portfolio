@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Arima', cursive;
+}
 
 /* --------HEADER----------- */
 header {
@@ -19,6 +22,7 @@ header ul {
 
 header li {
     background-color: gray;
+    border-radius: 20px;
     list-style: none;
     padding: 10px;
     margin: 10px;
@@ -28,6 +32,7 @@ header a {
     text-decoration: none;
     color: white;
 }
+
 
 /* -----------SECCION HOLA----------- */
 .main-section {
@@ -40,22 +45,32 @@ header a {
     justify-content: space-around;
     align-items: center;
     font-size: 1.7em;
+    color: #ff8686;
+}
+
+.main-section h1{
+    font-family: 'Indie Flower', cursive;
 }
 
 .main-section div {
-    background-color: aqua;
     margin: 15px;
     text-align: center;
-    max-width: 50%;
+}
+.description{
+    max-width: 40%;
 }
 
-.foto-perfil {
-    width: 400px;
-}
+ .foto-perfil {
+    
+    border-radius: 50%;
+    border-color: #f8bc9b;
+    border-style: dashed;
+} 
 
 .main-section img {
-    width: 100%;
-
+    width: 300px;
+    height: 300px;
+   
 }
 
 .main-section button {
@@ -63,7 +78,8 @@ header a {
     color: white;
     padding: 10px;
     margin: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
+    border-color: #ff8686;
 }
 
 /* --------------SECCION CONOCIMIENTOS----------- */
@@ -73,6 +89,7 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px; /*para dar espacio al header fijo*/
 }
 
 .skills-grid {
@@ -85,10 +102,11 @@ header a {
 }
 
 .skill-item {
-    background-color: lightgray;
     padding: 50px;
     margin: 15px;
     width: 15rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(15, 15,15, .5);
 }
 
 /* Iconos tecnologias */
@@ -205,6 +223,7 @@ blockquote {
 /* -----------------SECCION FOOTER--------------------- */
 footer{
     background-color: #ff8686;
+    padding: 50px;
 }
 footer ul{
     display: flex;
@@ -217,12 +236,19 @@ footer li{
 }
 footer a{
     text-decoration: none;
+    color: white;
+}
+footer li a:hover{
+    color: gray;
+    font-weight: bolder;
+    text-decoration:underline;
 }
 
 /* --------iconos redes-----------  */
 .caja-iconos-redes{
     display: flex;
     justify-content: center;
+    margin: 15px;
 }
 .icono-redes{
     background-color: white;
@@ -234,9 +260,29 @@ footer a{
     display: flex;/*para acomodarlo*/
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 footer .fa-brands, footer .fa-solid{
     color: #ff8686;
     font-size: 1.5em;
     
+}
+.icono-redes:hover{
+    box-shadow: 5px 5px 5px rgba(15, 15,15, .5);
+    /* background-color: gainsboro; */
+}
+/* footer .fa-brands:hover, footer .fa-solid:hover{
+    color: white;    
+} */
+
+/* ----firma footer--- */
+.footer-firma{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+#firma{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
 }
