@@ -8,6 +8,8 @@
 header {
     background-color: #ff8686;
     padding: 10px;
+    position: sticky;/*para dejar fijo*/
+    top: 0;
 }
 
 header ul {
@@ -198,4 +200,43 @@ blockquote {
 .contact-section {
     display: flex;
     justify-content: space-around;
+}
+
+/* -----------------SECCION FOOTER--------------------- */
+footer{
+    background-color: #ff8686;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+}
+
+/* --------iconos redes-----------  */
+.caja-iconos-redes{
+    display: flex;
+    justify-content: center;
+}
+.icono-redes{
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;/*para acomodarlo*/
+    justify-content: center;
+    align-items: center;
+}
+footer .fa-brands, footer .fa-solid{
+    color: #ff8686;
+    font-size: 1.5em;
+    
 }
