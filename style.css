@@ -3,15 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-family: 'Arima', cursive;
+}
+body{
+    background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86);
 }
 
 /* --------HEADER----------- */
 header {
     background-color: #ff8686;
     padding: 10px;
-    position: sticky;/*para dejar fijo*/
+    position: sticky;
+    /*para dejar fijo*/
     top: 0;
 }
 
@@ -19,24 +24,41 @@ header ul {
     display: flex;
     justify-content: end;
 }
-
 header li {
     background-color: gray;
+    /* background-color: #FFFF86; */
     border-radius: 20px;
     list-style: none;
     padding: 10px;
     margin: 10px;
 }
-
 header a {
     text-decoration: none;
     color: white;
+    /* color: #ff8686; */
 }
-
+@media (max-width:600px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        position: relative;
+    }
+    header li{
+        background-color: #ff8686;
+        padding: 2px;
+        margin: 2px;
+    }
+}
 
 /* -----------SECCION HOLA----------- */
 .main-section {
-    background-color: #f8e6cb;
+    /* background-color: #f8e6cb; */
+    background-color: #FFC386;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #ffffff, #fff7ff, #ffedee, #ffecc8, #fff6ac);
     min-height: 88vh;
     /*asi tiene en cuenta la barra de navegación. min por si ocupa mas*/
     padding: 15px;
@@ -46,36 +68,47 @@ header a {
     align-items: center;
     font-size: 1.7em;
     color: #ff8686;
+    color: #FF6666;/*este color mas fuerte y se lee mejor*/
+    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
+    /* margin: 20px; */
 }
 
-.main-section h1{
+.main-section h1 {
     font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
 }
 
 .main-section div {
     margin: 15px;
     text-align: center;
 }
-.description{
-    max-width: 40%;
+
+.description {  
+    border-radius: 20px;
+}
+.description p{
+    max-width: 600px; 
 }
 
- .foto-perfil {
-    
+.foto-perfil {
+
     border-radius: 50%;
     border-color: #f8bc9b;
     border-style: dashed;
-} 
+}
 
 .main-section img {
     width: 300px;
     height: 300px;
-   
+
 }
 
 .main-section button {
     background-color: #ff8686;
-    color: white;
+    background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86);
+    color: #FF6666;
+    font-weight: bold;
+    font-size: 0.6em;
     padding: 10px;
     margin: 15px;
     border-radius: 10px;
@@ -89,7 +122,14 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px; /*para dar espacio al header fijo*/
+    padding-top: 100px;
+    /*para dar espacio al header fijo*/
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, #ffffff, #fff7ff, #ffedee, #ffecc8, #fff6ac);
+    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
+    /* margin: 20px; */
+    color: rgb(97, 97, 97);
+    font-size: 1.2em;
 }
 
 .skills-grid {
@@ -106,7 +146,9 @@ header a {
     margin: 15px;
     width: 15rem;
     border-radius: 10px;
-    box-shadow: 0px 3px 5px rgba(15, 15,15, .5);
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
 }
 
 /* Iconos tecnologias */
@@ -174,7 +216,8 @@ blockquote {
     align-items: center;
     /*alineo en horizontal todas cajas, funciona solo si tiene widht*/
     padding-top: 100px;
-    padding-bottom: 20px;
+    /*da espacio al header fijo*/
+    padding-bottom: 50px;
     background-color: rgb(157, 157, 157);
 }
 
@@ -200,8 +243,10 @@ blockquote {
     background-color: rgb(201, 201, 201);
     cursor: pointer;
 }
-.proyect-item p{
-    margin-top: 15px;/*separa img de titulo*/
+
+.proyect-item p {
+    margin-top: 15px;
+    /*separa img de titulo*/
 }
 
 .proyect-item img {
@@ -211,77 +256,151 @@ blockquote {
 .proyect-item:hover {
     border: none;
     box-shadow: 0px 3px 5px #f8bc9b;
-    font-size: 1.2em;
 }
 
 /* ---------------------SECCION CONTACTO------------------ */
 .contact-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    
+}
+.contact-section > div{             /*hijo directo de la clase*/
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    
+}
+.contact-section h3{
+    color: #FF6666;
+    font-size: 1.8em;
+}
+.contact-info p{
+    max-width: 400px;/*Para que no se haga muy larga la linea*/
+    color: rgb(97, 97, 97);
+    margin: 15px;
+    text-align: start;
+}
+/* ---iconos-contacto----- */
+
+.iconos-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.iconos-contacto a{
+    text-decoration: none;
+    color: rgb(97, 97, 97);
 }
 
+
+.iconos-contacto a:hover{
+    color: #FF6666;
+
+} 
+
+
+.icono-contacto .fa-brands, .icono-contacto .fa-solid{
+    color: #ff8686;
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icono-contacto .fa-brands:hover,
+.icono-contacto .fa-solid:hover{
+    color: white;
+    background-color: #ff8686;
+} 
+
+
+/* Seccion Escribime */
+
 /* -----------------SECCION FOOTER--------------------- */
-footer{
+footer {
     background-color: #ff8686;
     padding: 50px;
 }
-footer ul{
+
+footer ul {
     display: flex;
     justify-content: center;
 }
-footer li{
+
+footer li {
     list-style: none;
     margin: 10px;
     padding: 10px;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: white;
 }
-footer li a:hover{
+
+footer li a:hover {
     color: gray;
     font-weight: bolder;
-    text-decoration:underline;
+    text-decoration: underline;
+}
+
+/*la barra de navegacion footer se pone en vertical*/
+@media (max-width:600px){
+    footer ul{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* --------iconos redes-----------  */
-.caja-iconos-redes{
+.caja-iconos-redes {
     display: flex;
     justify-content: center;
     margin: 15px;
 }
-.icono-redes{
+
+.icono-redes {
     background-color: white;
     margin: 15px;
     padding: 10px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    display: flex;/*para acomodarlo*/
+    display: flex;
+    /*para acomodarlo*/
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-footer .fa-brands, footer .fa-solid{
+
+footer .fa-brands,
+footer .fa-solid {
     color: #ff8686;
     font-size: 1.5em;
-    
+
 }
-.icono-redes:hover{
-    box-shadow: 5px 5px 5px rgba(15, 15,15, .5);
+
+.icono-redes:hover {
+    box-shadow: 5px 5px 5px rgba(15, 15, 15, .5);
     /* background-color: gainsboro; */
 }
+
 /* footer .fa-brands:hover, footer .fa-solid:hover{
     color: white;    
 } */
 
 /* ----firma footer--- */
-.footer-firma{
+.footer-firma {
     text-align: center;
     color: white;
     padding: 15px;
+    /* text-shadow: 1px 1px 1px black; */
 }
-#firma{
+
+#firma {
     font-family: 'Indie Flower', cursive;
     font-size: 1.3em;
     font-weight: bold;
