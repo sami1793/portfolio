@@ -270,8 +270,8 @@ blockquote {
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
     text-align: center;
-    margin: 50px;
-    padding: 50px;
+    margin: 3%;/**JUGAR CON ESTOOOOO*/
+    padding: 5% 7%; /*Cuando la caja se achica, el padding tmb en proporcion*/
     
 }
 .contact-section h3{
@@ -362,30 +362,20 @@ footer li a:hover {
     margin: 15px;
 }
 
-.icono-redes {
+.footer-social-icon {
+    color: #ff8686;
+    font-size: 1.5em;
     background-color: white;
     margin: 15px;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
+    padding: 15px;
     border-radius: 50%;
-    display: flex;
-    /*para acomodarlo*/
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
-footer .fa-brands,
-footer .fa-solid {
-    color: #ff8686;
-    font-size: 1.5em;
-
-}
-
-.icono-redes:hover {
-    box-shadow: 5px 5px 5px rgba(15, 15, 15, .5);
-    /* background-color: gainsboro; */
+.footer-social-icon:hover {
+    background-color: #ff8686;
+    color: white;
+    border: solid 1px white;
 }
 
 /* footer .fa-brands:hover, footer .fa-solid:hover{
