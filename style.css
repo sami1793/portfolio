@@ -8,7 +8,8 @@ html {
     font-family: 'Arima', cursive;
 }
 body{
-    background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86);
+    /* background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86); */
+    background-color: #fff4d7;
 }
 
 /* --------HEADER----------- */
@@ -24,12 +25,11 @@ header ul {
     display: flex;
     justify-content: end;
 }
-header li {
-    background-color: gray;
-    /* background-color: #FFFF86; */
+header li {    
+    /* background-color: #FFFF86;  */
     border-radius: 20px;
     list-style: none;
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
 }
 header a {
@@ -37,6 +37,11 @@ header a {
     color: white;
     /* color: #ff8686; */
 }
+header li:hover {
+    background-color: gray;
+    padding: 5px;
+}
+
 @media (max-width:600px) {
     header ul {
         display: flex;
@@ -56,10 +61,9 @@ header a {
 /* -----------SECCION HOLA----------- */
 .main-section {
     /* background-color: #f8e6cb; */
-    background-color: #FFC386;
     background-color: white;
-    background-image: linear-gradient(to bottom, #ffffff, #fff7ff, #ffedee, #ffecc8, #fff6ac);
-    min-height: 88vh;
+    /* background-image: linear-gradient(to bottom, #ffffff, #fff7ff, #ffedee, #ffecc8, #fff6ac); */
+    min-height: 100vh;
     /*asi tiene en cuenta la barra de navegación. min por si ocupa mas*/
     padding: 15px;
     display: flex;
@@ -70,7 +74,8 @@ header a {
     color: #ff8686;
     color: #FF6666;/*este color mas fuerte y se lee mejor*/
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
-    /* margin: 20px; */
+    margin: 3%;
+    border-radius: 20px ;
 }
 
 .main-section h1 {
@@ -88,6 +93,8 @@ header a {
 }
 .description p{
     max-width: 600px; 
+    margin-bottom: 15px;
+    color: gray;
 }
 
 .foto-perfil {
@@ -103,16 +110,27 @@ header a {
 
 }
 
-.main-section button {
-    background-color: #ff8686;
-    background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86);
-    color: #FF6666;
+.button {
+    text-decoration: none;
+    background-color: #FF6666;
+    color: white;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.6em;
     padding: 10px;
     margin: 15px;
-    border-radius: 10px;
-    border-color: #ff8686;
+    border-radius: 20px;
+    border: solid 2px black;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86); */
+    /* font-size: 0.7em; */
+    box-shadow: 1px 2px black;
+}
+.carita{
+    color: #FF6666;
 }
 
 /* --------------SECCION CONOCIMIENTOS----------- */
@@ -125,11 +143,13 @@ header a {
     padding-top: 100px;
     /*para dar espacio al header fijo*/
     padding-bottom: 50px;
-    background-image: linear-gradient(to bottom, #ffffff, #fff7ff, #ffedee, #ffecc8, #fff6ac);
-    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
+    background-color: white;
     /* margin: 20px; */
     color: rgb(97, 97, 97);
     font-size: 1.2em;
+    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
+    margin: 3%;
+    border-radius: 20px ;
 }
 
 .skills-grid {
@@ -218,7 +238,10 @@ blockquote {
     padding-top: 100px;
     /*da espacio al header fijo*/
     padding-bottom: 50px;
-    background-color: rgb(157, 157, 157);
+    background-color: rgb(196, 196, 196);
+    box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
+    margin: 3%;
+    border-radius: 20px ;
 }
 
 .proyects-grid {
@@ -241,6 +264,7 @@ blockquote {
     /*margen entre cajas*/
     padding: 15px;
     background-color: rgb(201, 201, 201);
+    background-color: white;
     cursor: pointer;
 }
 
