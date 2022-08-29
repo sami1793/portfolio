@@ -10,6 +10,15 @@ html {
 body{
     /* background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86); */
     background-color: #fff4d7;
+    /* background-color: black; */
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.botones a{
+    margin: 15px;
 }
 
 /* --------HEADER----------- */
