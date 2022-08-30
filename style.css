@@ -298,8 +298,8 @@ blockquote {
     margin: 15px;
     /*margen entre cajas*/
     padding: 15px;
-    background-color: rgb(201, 201, 201);
     background-color: white;
+    color: white;
     cursor: pointer;
 }
 
@@ -312,10 +312,26 @@ blockquote {
     width: 70%;
 }
 
-.proyect-item:hover {
+.proyect-item figcaption{
+    background-color: #FF6666;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+/* .proyect-item:hover {
+    
+} */
+.proyect-item:hover{
     border: none;
     box-shadow: 0px 3px 5px #f8bc9b;
-    color: #FF6666;
+    transform: translateY(-20px);
+    transition: transform 0.7s; /*tiempo en que se desplaza*/
+}
+.proyect-item:active{
+    box-shadow: 2px 6px 7px #FF6666;
+}
+.proyect-item:hover figcaption{
+    opacity: 1;
 }
 
 /* ---------------------SECCION CONTACTO------------------ */
