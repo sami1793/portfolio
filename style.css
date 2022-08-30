@@ -7,6 +7,9 @@
 html {
     font-family: 'Arima', cursive;
 }
+a{
+    text-decoration: none;
+}
 
 h2,
 h3 {

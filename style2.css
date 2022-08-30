@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+h1 {
+    margin-bottom: 5%;
+    color: #3B3351;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    font-family: 'Coming Soon', cursive;
+}
+
+h1:hover{
+    transition: 3s;
+    transform: rotate(360deg);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-imagen{
+    max-width: 40%;
+    min-width: 300px;
+}
+
+img {
+    width: 100%;
+
+}
