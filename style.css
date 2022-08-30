@@ -197,6 +197,13 @@ header li:hover {
     box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
 }
 
+.skill-item:hover{
+    border: none;
+    box-shadow: 0px 3px 5px #f8bc9b;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 /* Iconos tecnologias */
 .fa-html5 {
     color: #e54d26;
@@ -265,6 +272,7 @@ blockquote {
     /*da espacio al header fijo*/
     padding-bottom: 50px;
     background-color: rgb(196, 196, 196);
+    background-color: white;
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
     margin: 5%;
     border-radius: 20px;
@@ -279,7 +287,8 @@ blockquote {
 
 .proyect-item {
     width: 260px;
-    border: gray solid 1px;
+    /* border: gray solid 1px; */
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -306,6 +315,7 @@ blockquote {
 .proyect-item:hover {
     border: none;
     box-shadow: 0px 3px 5px #f8bc9b;
+    color: #FF6666;
 }
 
 /* ---------------------SECCION CONTACTO------------------ */
@@ -358,12 +368,10 @@ blockquote {
 
 .iconos-contacto a:hover {
     color: #FF6666;
-
 }
 
 
-.icono-contacto .fa-brands,
-.icono-contacto .fa-solid {
+.contact-social-icon {
     color: #ff8686;
     font-size: 1.5em;
     margin: 10px;
@@ -371,8 +379,7 @@ blockquote {
     border-radius: 50%;
 }
 
-.icono-contacto .fa-brands:hover,
-.icono-contacto .fa-solid:hover {
+.iconos-contacto a:hover .contact-social-icon{
     color: white;
     background-color: #ff8686;
 }
