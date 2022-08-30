@@ -7,17 +7,25 @@
 html {
     font-family: 'Arima', cursive;
 }
-body{
-    /* background-image: linear-gradient(to right top, #ff8686, #ff9182, #ff9d80, #ffa87f, #ffb481, #ffbd81, #ffc781, #ffd183, #ffdc82, #ffe782, #fff383, #ffff86); */
-    background-color: #fff4d7;
-    /* background-color: black; */
+
+h2,
+h3 {
+    color: #FF6666;
 }
-.botones{
+
+body {
+    background-color: #fff4d7;
+    background-color: #3B3351;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(59, 51, 81, 1) 60%);
+}
+
+.botones {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.botones a{
+
+.botones a {
     margin: 15px;
 }
 
@@ -34,20 +42,24 @@ header ul {
     display: flex;
     justify-content: end;
 }
-header li {    
+
+header li {
     /* background-color: #FFFF86;  */
     border-radius: 20px;
     list-style: none;
     padding: 5px;
     margin: 10px;
 }
+
 header a {
     text-decoration: none;
     color: white;
     /* color: #ff8686; */
 }
+
 header li:hover {
     background-color: gray;
+    background-color: #3B3351;
     padding: 5px;
 }
 
@@ -57,10 +69,12 @@ header li:hover {
         flex-direction: column;
         align-items: center;
     }
-    header{
+
+    header {
         position: relative;
     }
-    header li{
+
+    header li {
         background-color: #ff8686;
         padding: 2px;
         margin: 2px;
@@ -81,10 +95,11 @@ header li:hover {
     align-items: center;
     font-size: 1.7em;
     color: #ff8686;
-    color: #FF6666;/*este color mas fuerte y se lee mejor*/
+    color: #FF6666;
+    /*este color mas fuerte y se lee mejor*/
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
-    margin: 3%;
-    border-radius: 20px ;
+    margin: 5%;
+    border-radius: 20px;
 }
 
 .main-section h1 {
@@ -97,11 +112,12 @@ header li:hover {
     text-align: center;
 }
 
-.description {  
+.description {
     border-radius: 20px;
 }
-.description p{
-    max-width: 600px; 
+
+.description p {
+    max-width: 600px;
     margin-bottom: 15px;
     color: gray;
 }
@@ -129,7 +145,7 @@ header li:hover {
     padding: 10px;
     margin: 15px;
     border-radius: 20px;
-    border: solid 2px black;
+    border: solid 2px #3B3351;
     cursor: pointer;
 }
 
@@ -138,7 +154,8 @@ header li:hover {
     /* font-size: 0.7em; */
     box-shadow: 1px 2px black;
 }
-.carita{
+
+.carita {
     color: #FF6666;
 }
 
@@ -157,8 +174,8 @@ header li:hover {
     color: rgb(97, 97, 97);
     font-size: 1.2em;
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
-    margin: 3%;
-    border-radius: 20px ;
+    margin: 5%;
+    border-radius: 20px;
 }
 
 .skills-grid {
@@ -249,8 +266,8 @@ blockquote {
     padding-bottom: 50px;
     background-color: rgb(196, 196, 196);
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
-    margin: 3%;
-    border-radius: 20px ;
+    margin: 5%;
+    border-radius: 20px;
 }
 
 .proyects-grid {
@@ -296,58 +313,69 @@ blockquote {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
-.contact-section > div{             /*hijo directo de la clase*/
+
+.contact-section>div {
+    /*hijo directo de la clase*/
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
     text-align: center;
-    margin: 3%;/**JUGAR CON ESTOOOOO*/
-    padding: 5% 7%; /*Cuando la caja se achica, el padding tmb en proporcion*/
-    
+    margin: 3%;
+    /**JUGAR CON ESTOOOOO*/
+    padding: 5% 7%;
+    /*Cuando la caja se achica, el padding tmb en proporcion*/
+
 }
-.contact-section h3{
+
+.contact-section h3 {
     color: #FF6666;
     font-size: 1.8em;
 }
-.contact-info p{
-    max-width: 400px;/*Para que no se haga muy larga la linea*/
+
+.contact-info p {
+    max-width: 400px;
+    /*Para que no se haga muy larga la linea*/
     color: rgb(97, 97, 97);
     margin: 15px;
     text-align: start;
 }
+
 /* ---iconos-contacto----- */
 
-.iconos-contacto{
+.iconos-contacto {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.iconos-contacto a{
+
+.iconos-contacto a {
     text-decoration: none;
     color: rgb(97, 97, 97);
 }
 
 
-.iconos-contacto a:hover{
+.iconos-contacto a:hover {
     color: #FF6666;
 
-} 
+}
 
 
-.icono-contacto .fa-brands, .icono-contacto .fa-solid{
+.icono-contacto .fa-brands,
+.icono-contacto .fa-solid {
     color: #ff8686;
     font-size: 1.5em;
     margin: 10px;
     padding: 10px;
     border-radius: 50%;
 }
+
 .icono-contacto .fa-brands:hover,
-.icono-contacto .fa-solid:hover{
+.icono-contacto .fa-solid:hover {
     color: white;
     background-color: #ff8686;
-} 
+}
 
 
 /* Seccion Escribime */
@@ -376,13 +404,14 @@ footer a {
 
 footer li a:hover {
     color: gray;
+    color: #3B3351;
     font-weight: bolder;
     text-decoration: underline;
 }
 
 /*la barra de navegacion footer se pone en vertical*/
-@media (max-width:600px){
-    footer ul{
+@media (max-width:600px) {
+    footer ul {
         flex-direction: column;
         align-items: center;
     }
