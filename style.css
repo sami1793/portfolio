@@ -14,6 +14,7 @@ a{
 h2,
 h3 {
     color: #FF6666;
+    font-size: 1.8em;
 }
 
 body {
@@ -66,7 +67,7 @@ header li:hover {
     padding: 5px;
 }
 
-@media (max-width:600px) {
+@media (max-width:500px) {
     header ul {
         display: flex;
         flex-direction: column;
@@ -82,6 +83,7 @@ header li:hover {
         padding: 2px;
         margin: 2px;
     }
+    
 }
 
 /* -----------SECCION HOLA----------- */
@@ -95,6 +97,7 @@ header li:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* justify-content: center; */
     align-items: center;
     font-size: 1.7em;
     color: #ff8686;
@@ -123,6 +126,7 @@ header li:hover {
     max-width: 600px;
     margin-bottom: 15px;
     color: gray;
+    overflow-wrap: break-word;
 }
 
 .foto-perfil {
@@ -133,9 +137,23 @@ header li:hover {
 }
 
 .main-section img {
-    width: 300px;
-    height: 300px;
-
+    width: 400px;
+    height: 400px;
+}
+@media(max-width:500px) and (min-width:300px){
+    .main-section img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width:299px){
+    .main-section img {
+        width: 150px;
+        height: 150px;
+    }
+    .main-section{
+        font-size: 1.2em;
+    }
 }
 
 .button {
@@ -175,7 +193,6 @@ header li:hover {
     background-color: white;
     /* margin: 20px; */
     color: rgb(97, 97, 97);
-    font-size: 1.2em;
     box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5);
     margin: 5%;
     border-radius: 20px;
@@ -237,8 +254,19 @@ header li:hover {
 
 .fa-git-alt {
     color: #f34f29;
-    font-size: 6rem;
+    font-size: 6em;
 }
+
+@media (max-width:300px){
+    .skill-item{
+        width: auto;
+        padding: 10%;        
+    }
+    .skill-icon{
+        font-size: 4rem;
+    }
+}
+
 
 /* --------------SECCION FRASE---------------- */
 .quote-section {
@@ -337,6 +365,12 @@ blockquote {
     opacity: 1;
 }
 
+@media (max-width:300px){
+    .proyect-item{
+        width: auto;        
+    }
+}
+
 /* ---------------------SECCION CONTACTO------------------ */
 .contact-section {
     display: flex;
@@ -356,11 +390,6 @@ blockquote {
     padding: 5% 7%;
     /*Cuando la caja se achica, el padding tmb en proporcion*/
 
-}
-
-.contact-section h3 {
-    color: #FF6666;
-    font-size: 1.8em;
 }
 
 .contact-info p {
@@ -401,6 +430,15 @@ blockquote {
 .iconos-contacto a:hover .contact-social-icon{
     color: white;
     background-color: #ff8686;
+}
+
+@media (max-width:300px){
+    .ocultar{
+        display: none;
+    }
+    .iconos-contacto{
+        align-items: center;
+    }
 }
 
 
@@ -459,16 +497,18 @@ footer li a:hover {
 }
 
 /*la barra de navegacion footer se pone en vertical*/
-@media (max-width:600px) {
+@media (max-width:500px) {
     footer ul {
         flex-direction: column;
         align-items: center;
     }
 }
 
+
 /* --------iconos redes-----------  */
 .caja-iconos-redes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 15px;
 }
