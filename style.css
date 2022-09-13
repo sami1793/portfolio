@@ -8,6 +8,7 @@
     --main-color-strong:#ff6666;
     --main-color-text:#4F4538;
     --bg-color:#FFEEDA;
+    --bg-color-strong:#FFE6BF
 }
 
 html {
@@ -57,7 +58,6 @@ header ul {
 }
 
 header li {
-    border-radius: 20px;
     list-style: none;
     padding: 5px;
     margin: 10px;
@@ -66,10 +66,12 @@ header li {
 header a {
     text-decoration: none;
     color: white;
+    border-radius: 20px;
 }
 
-header li:hover {
-    background-color: #4F4538;
+header a:hover {
+    background-color: var(--bg-color-strong);
+    color: var(--main-color-strong);
     padding: 5px;
 }
 
@@ -96,6 +98,7 @@ header li:hover {
     header a:hover{
         color: #4F4538;
         font-weight: bold;
+        background-color: var(--main-color);
     }
     
 }
@@ -130,10 +133,10 @@ header li:hover {
     transform: rotate(-45deg);
 } 
 .main-section {
-    background-color: #FFD79D;
+    background-color: var(--bg-color-strong);
     min-height: 80vh;/*NO 100 para ver los bordes*/
     /*asi tiene en cuenta la barra de navegación. min por si ocupa mas*/
-    padding: 15px;
+    padding: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -158,12 +161,14 @@ header li:hover {
 
 .description {
     border-radius: 20px;
+    overflow:hidden; /*oculta si hay despordamiento de texto*/
 }
 
 .description p {
     max-width: 600px;
     margin-bottom: 15px;
     color: var(--main-color-text);
+    
 }
 
 .main-section img {
@@ -217,18 +222,19 @@ header li:hover {
 }
 
 /* --------------SECCION CONOCIMIENTOS----------- */
+.box-skills-section{
+    padding-top: 50px;
+}
 .skills-section {
     /* min-height: 88vh; */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 50px;
     /*para dar espacio al header fijo*/
     padding-bottom: 50px;
-    background-color: #FFD79D;
-    /* background-color: var(--secundary-color); */
-    /* margin: 20px; */
+    background-color: var(--bg-color-strong);
     /* box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5); */
     border: 2px dotted var(--main-color-strong);
     margin: 5%;
@@ -261,15 +267,13 @@ header li:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
-    margin: 15px;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 10px;
+    align-items:center;
+    margin: 20px;
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
     cursor: pointer;
-    background-color: var(--bg-color);
+    background-color: white;
     box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
 }
 
@@ -281,7 +285,7 @@ header li:hover {
 
 /* Iconos tecnologias */
 .skill-icon{
-    font-size: 6rem;
+    font-size: 7rem;
     filter: grayscale(35%);
 }
 .skill-item:hover .skill-icon{
@@ -335,6 +339,11 @@ header li:hover {
         font-size: 4rem;
     }
 }
+@media(max-width:600px){
+    .skills-section{
+        padding: 5% 5%;
+    }
+}
 
 
 /* --------------SECCION FRASE---------------- */
@@ -371,16 +380,19 @@ blockquote {
 }
 
 /* ----------------SECCION MIS PROYECTOS------------------ */
+.box-proyects-section{
+    padding-top: 50px;
+}
 .proyects-section {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     /*alineo en horizontal todas cajas, funciona solo si tiene widht*/
-    padding-top: 100px;
+    padding-top: 50px;
     /*da espacio al header fijo*/
     padding-bottom: 50px;
-    background-color: #FFD19C;
+    background-color: var(--bg-color-strong);
     /* box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5); */
     border: 2px dotted var(--main-color-strong);
     margin: 5%;
@@ -456,56 +468,46 @@ blockquote {
     .proyect-item{
         width: auto;        
     }
+    
+}
+@media(max-width:600px){
+    .proyects-section{
+        padding: 5% 5%;
+    }
 }
 
 /* ---------------------SECCION CONTACTO------------------ */
+.box-contact-section{
+    padding-top: 50px;
+}
 .contact-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .contact-section>div {
     /*hijo directo de la clase*/
-    background-color: #FFD79D;
+    background-color: var(--bg-color-strong);
     border-radius: 20px;
     /* box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5); */
     border: 2px dotted var(--main-color-strong);
     text-align: center;
-    margin: 3%;
+    margin: 3% 1%;
     /**JUGAR CON ESTOOOOO*/
-    padding: 5% 7%;
+    padding: 50px 30px;
     /*Cuando la caja se achica, el padding tmb en proporcion*/
 }
-/* .contact-info h3{
-    position: relative;
-} */
-/* .contact-info h3::after{
-    content: "";
-    position: absolute;
-    top: 3%;
-    right: 90%;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--main-color-strong);
-    box-shadow: 1px 2px 1px#4F4538;
-} */
- /* .contact-info h3::before{
-    content: "\f08d";
-    font-family: "Font Awesome 5 Free";
-    position: absolute;
-    bottom: 100%;
-    left: 100%;  
-    transform: rotate(45deg); 
-}  */
-
 .contact-info p {
     max-width: 400px;
     /*Para que no se haga muy larga la linea*/
     margin: 15px;
     text-align: start;
+}
+@media(max-width:600px){
+    .contact-section>div{
+        padding: 5% 5%;
+    }
 }
 
 /* ---iconos-contacto----- */
