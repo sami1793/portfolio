@@ -9,7 +9,13 @@
     --main-color-strong:#ff6666;
     --main-color-text:#4F4538;
     --bg-color:#FFEEDA;
-    --bg-color-strong:#FFE6BF
+    --bg-color-strong:#FFE6BF;
+    --html-color: #e54d26;
+    --css-color: #3d8fc6;
+    --sass-color:#c69;
+    --js-color:#f0db4f;
+    --react-color:#61dafb;
+    --git-color:#f34f29;
 }
 
 html {
@@ -51,6 +57,7 @@ header {
     /*para dejar fijo*/
     top: 0;
     z-index: 1;/*para que quede por encima siempre*/
+    opacity: 0.5;
 }
 
 header ul {
@@ -74,6 +81,7 @@ header a:hover {
     background-color: var(--bg-color-strong);
     color: var(--main-color-strong);
     padding: 5px;
+    transition: all 0.6s;
 }
 
 @media (max-width:500px) {
@@ -135,17 +143,17 @@ header a:hover {
 } 
 .main-section {
     background-color: var(--bg-color-strong);
-    min-height: 80vh;/*NO 100 para ver los bordes*/
+    min-height: 70vh;/*NO 100 para ver los bordes*/
     /*asi tiene en cuenta la barra de navegación. min por si ocupa mas*/
     padding: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 1.7em;
     color: var(--main-color-strong);
     /* box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5); */
-    border: 4px dashed;
+    border: 2px dotted;
     border-radius: 50px;
     margin: 5%;
 }
@@ -177,8 +185,13 @@ header a:hover {
     background-color: var(--bg-color);
     border-radius: 50%;
     border-color: #f8bc9b;
-    border: 5px dashed;
-    border-style: dotted;
+    border: 2px dotted;
+}
+
+@media(max-width:1200px){
+    .main-section{
+        justify-content: center;
+    }
 }
 
 @media(max-width:500px) and (min-width:300px){
@@ -204,7 +217,7 @@ header a:hover {
     background-color: var(--main-color-strong);
     color: white;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 0.6em;
     padding: 10px;
     margin: 15px;
@@ -214,7 +227,8 @@ header a:hover {
 }
 
 .button:hover {
-    box-shadow: 1px 2px black;
+    box-shadow: 1px 2px 3px gray;
+    transition: all 0.4s;
 }
 
 .carita {
@@ -235,7 +249,6 @@ header a:hover {
     /*para dar espacio al header fijo*/
     padding-bottom: 50px;
     background-color: var(--bg-color-strong);
-    /* box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5); */
     border: 2px dotted var(--main-color-strong);
     margin: 5%;
     border-radius: 20px;
@@ -274,6 +287,7 @@ header a:hover {
     border-radius: 50%;
     cursor: pointer;
     background-color: white;
+    color: var(--main-color-text);
     box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
 }
 
@@ -286,46 +300,82 @@ header a:hover {
 /* Iconos tecnologias */
 .skill-icon{
     font-size: 7rem;
-    filter: grayscale(35%);
+    /* filter: grayscale(35%); */
 }
 .skill-item:hover .skill-icon{
     filter:grayscale(0%);
 }
+/* HTML5 */
 .fa-html5 {
-    color: #e54d26;
+    color: var(--html-color);
 }
-.html-item:hover{
-    box-shadow: 1px 1px 3px 5px #e54d26;
+.html-item:hover, .html-item:focus{
+    color: var(--html-color);
+    box-shadow: 1px 1px 3px 5px var(--html-color);
+    transition: all 0.4s;
 }
+.html-item:active{
+    box-shadow: 1px 1px 6px 5px var(--html-color);
+}
+/* CSS3 */
 .fa-css3-alt {
-    color: #3d8fc6;
+    color: var(--css-color);
 }
-.css-item:hover{
-    box-shadow: 1px 1px 3px 5px #3d8fc6;
+.css-item:hover, .css-item:focus{
+    color: var(--css-color);
+    box-shadow: 1px 1px 3px 5px var(--css-color);
+    transition: all 0.4s;
 }
+.css-item:active{
+    box-shadow: 1px 1px 6px 5px var(--css-color);
+}
+/* SASS */
 .fa-sass {
-    color: #c69;
+    color: var(--sass-color);
 }
-.sass-item:hover{
-    box-shadow: 1px 1px 3px 5px #c69;
+.sass-item:hover, .sass-item:focus{
+    color: var(--sass-color);
+    box-shadow: 1px 1px 3px 5px var(--sass-color);
+    transition: all 0.4s;
 }
+.sass-item:active{
+    box-shadow: 1px 1px 6px 5px var(--sass-color);
+}
+/* JAVASCRIPT */
 .fa-js-square {
-    color: #f0db4f;
+    color: var(--js-color);
 }
-.js-item:hover{
-    box-shadow: 1px 1px 3px 5px #f0db4f;
+.js-item:hover, .js-item:focus{
+    color: var(--js-color);
+    box-shadow: 1px 1px 3px 5px var(--js-color);
+    transition: all 0.4s;
 }
+.js-item:active{
+    box-shadow: 1px 1px 6px 5px var(--js-color);
+}
+/* REACT */
 .fa-react {
-    color: #61dafb;
+    color: var(--react-color);
 }
-.react-item:hover{
-    box-shadow: 1px 1px 3px 5px #61dafb;
+.react-item:hover, .react-item:focus{
+    color: var(--react-color);
+    box-shadow: 1px 1px 3px 5px var(--react-color);
+    transition: all 0.4s;
 }
+.react-item:active{
+    box-shadow: 1px 1px 6px 5px var(--react-color);
+}
+/* GIT */
 .fa-git-alt {
-    color: #f34f29;
+    color: var(--git-color);
 }
-.git-item:hover{
-    box-shadow: 1px 1px 3px 5px #f34f29;
+.git-item:hover, .git-item:focus{
+    color: var(--git-color);
+    box-shadow: 1px 1px 3px 5px var(--git-color);
+    transition: all 0.4s;
+}
+.git-item:active{
+    box-shadow: 1px 1px 6px 5px var(--git-color);
 }
 
 @media (max-width:300px){
