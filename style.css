@@ -203,7 +203,7 @@ header a:hover {
     .main-section{
         font-size: 1em;
         border: 2px dotted;
-        border-radius: 10px;
+        border-radius: 15px;
     }
 }
 @media (max-width:299px){
