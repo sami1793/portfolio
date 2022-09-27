@@ -1,8 +1,11 @@
-# Portfolio | Samanta Romero
-## Intro
-Este proyecto consiste en el desarrollo de mi Portfolio Web.
-Fue desarrollado como primer trabajo en el curso de Desarrollo Frontend que estoy realizando. En el mismo iré agregando todos los proyectos que vaya realizando. Además tiene todos mis links de contacto.
-## Conocimientos Aplicados
+# Portfolio | Samanta Romero 👩‍💻
+## Intro 📌
+Hola!! 👋
+Este proyecto consiste en el desarrollo de mi Portfolio Web, fue desarrollado como primer trabajo en el curso de Desarrollo Frontend que estoy realizando. El mismo es 'responsive design'.
+Todos los proyectos que vaya realizando estarán aquí. 
+## Conocimientos Aplicados 📋
 - HTML5
 - CSS3
-## Deploy
+## Deploy 🚀
+En el siguiente enlace podes ver el resultado:
+
