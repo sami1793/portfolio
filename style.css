@@ -182,10 +182,11 @@ header a:hover {
 .main-section img {
     width: 400px;
     height: 400px;
-    background-color: var(--bg-color);
-    border-radius: 50%;
-    border-color: #f8bc9b;
-    border: 2px dotted;
+    /* background-color: var(--bg-color); */
+    /* border-radius: 50%; */
+    /* border-color: #f8bc9b; */
+    /* border: 2px dotted; */
+    transform: scaleX(-1);
 }
 
 @media(max-width:1200px){
