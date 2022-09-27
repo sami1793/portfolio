@@ -5,3 +5,4 @@ Fue desarrollado como primer trabajo en el curso de Desarrollo Frontend que esto
 ## Conocimientos Aplicados
 - HTML5
 - CSS3
+## Deploy
