@@ -200,6 +200,11 @@ header a:hover {
         width: 250px;
         height: 250px;
     }
+    .main-section{
+        font-size: 1em;
+        border: 2px dotted;
+        border-radius: 10px;
+    }
 }
 @media (max-width:299px){
     .main-section img {
@@ -207,8 +212,8 @@ header a:hover {
         height: 150px;
     }
     .main-section{
-        font-size: 1.2em;
-        border: 5px dashed;
+        font-size: 0.8em;
+        border: 2px dotted;
         border-radius: 10px;
     }
 }
