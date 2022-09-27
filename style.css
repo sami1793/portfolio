@@ -150,7 +150,7 @@ header a:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: var(--main-color-strong);
     /* box-shadow: 5px 5px 5px 5px rgba(15, 15, 15, .5); */
     border: 2px dotted;
@@ -425,7 +425,7 @@ blockquote {
     text-align: end;
     font-size: 1.5rem;
 }
-@media (max-width:300px){
+@media (max-width:500px){
     .quote-section {
         padding: 15px;
     }
