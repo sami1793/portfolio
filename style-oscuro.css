@@ -5,11 +5,11 @@
     scroll-behavior: smooth; /*va suavemente a las secciones*/
 }
 :root{
-    --main-color:#ff8686;
-    --main-color-strong:#ff6666;
-    --main-color-text:#4F4538;
-    --bg-color:#FFEEDA;
-    --bg-color-strong:#FFE6BF;
+    --main-color:#1740a1;
+    --main-color-strong:#112ed3;
+    --main-color-text:#000000;
+    --bg-color:#f1fafe;
+    --bg-color-strong:rgba(23, 224, 255, 0.8);
     --html-color: #e54d26;
     --css-color: #3d8fc6;
     --sass-color:#c69;
@@ -34,9 +34,7 @@ h3 {
 }
 
 body {
-    background-color: var(--bg-color);
-    /* background-image: linear-gradient(to bottom, #ffd79d, #ffddac, #ffe2bb, #ffe8cb, #ffeeda); */
-   
+    background-image: url("imagenes/fondo.jpg");
 }
 
 .botones {
@@ -57,7 +55,7 @@ header {
     /*para dejar fijo*/
     top: 0;
     z-index: 1;/*para que quede por encima siempre*/
-    opacity: 0.5;
+    opacity: 0.9;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +85,7 @@ header a:hover {
     transition: all 0.6s;
 }
 
-.fa-moon{
+.fa-sun{
     font-size: 1.6rem;
     margin: 0px 10px;
 }
@@ -95,8 +93,9 @@ header a:hover {
 @media (max-width:500px) {
     header ul {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-direction: column; */
         align-items: center;
+        flex-wrap: wrap;
     }
 
     header {
@@ -136,7 +135,7 @@ header a:hover {
     width: 13vw;
     height: 4vw;
     background-color: var(--main-color-strong);
-    opacity: 0.3;
+    opacity: 0.7;
     transform: rotate(45deg);
 }
 .main-section::after{
@@ -147,7 +146,7 @@ header a:hover {
     width: 13vw;
     height: 4vw;
     background-color: var(--main-color-strong);
-    opacity: 0.3;
+    opacity: 0.7;
     transform: rotate(-45deg);
 } 
 .main-section {
@@ -278,7 +277,7 @@ header a:hover {
     width: 13vw;
     height: 4vw;
     background-color: var(--main-color-strong);
-    opacity: 0.3;
+    opacity: 0.7;
     /* transform: rotate(45deg); */
 }
 
@@ -472,7 +471,7 @@ blockquote {
     width: 13vw;
     height: 4vw;
     background-color: var(--main-color-strong);
-    opacity: 0.3;
+    opacity: 0.6;
     /* transform: rotate(45deg); */
 }
 
@@ -586,7 +585,7 @@ blockquote {
 
 .iconos-contacto a {
     text-decoration: none;
-    color: rgb(85, 85, 85);
+    color: black;
 }
 
 
