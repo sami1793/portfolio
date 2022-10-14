@@ -34,9 +34,7 @@ h3 {
 }
 
 body {
-    background-color: var(--bg-color);
-    /* background-image: linear-gradient(to bottom, #ffd79d, #ffddac, #ffe2bb, #ffe8cb, #ffeeda); */
-   
+    background-color: var(--bg-color);   
 }
 
 .botones {
